@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ba22fa3301.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="chest">
+        <div class="projects-container">
+          <div class="projects">
+            <a href="https://rocktlet.netlify.app/" target="_blank">Rocktlet</a>
+            <p>vanilla JavaScript, HTML, CSS</p>
+          </div>
+          <div class="projects">
+            <a href="#" target="_blank">Second Project</a>
+            <p>...</p>
+          </div>
+          <div class="projects">
+            <a href="#" target="_blank">Third Project</a>
+            <p>...</p>
+          </div>
+          <div class="projects">
+            <a href="#" target="_blank">Fourth Project</a>
+            <p>...</p>
+          </div>
+          <a class="close"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+        </div>
+      </div>
+      <div class="greetings active">
+        <div class="text-container">
+          <h1>Hello, my name is Adrian</h1>
+          <h2>I am an aspiring Junior Frontend Developer</h2>
+          <h3>
+            This is my portfolio. If you want to learn more, press START and go
+            (standard WASD) to the chest.
+          </h3>
+          <a id="start-button">START</a>
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <script src="./HelperJs/Data.js"></script>
+    <script src="./HelperJs/Images.js"></script>
+    <script src="./HelperJs/Classes.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

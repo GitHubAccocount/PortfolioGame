@@ -1,0 +1,154 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  background-color: black;
+  width: 960px;
+  height: 540px;
+}
+
+.greetings,
+.chest {
+  height: 540px;
+  position: absolute;
+  display: none;
+}
+.greetings {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: inherit;
+}
+.chest {
+  background-image: url(/Assets1/ChestBackground2.png);
+  background-size: contain;
+  width: calc(960px / 2);
+  border: 7px solid rgb(198, 187, 187);
+}
+
+.projects-container {
+  width: inherit;
+  height: inherit;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 60px 40px 20px;
+  position: relative;
+}
+
+.projects {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 3px 1px rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(136, 66, 66);
+}
+
+.projects a {
+  font-size: 25px;
+  color: rgb(235, 185, 20);
+  font-family: "MedievalSharp", cursive;
+}
+
+.projects p {
+  font-family: "Catamaran", sans-serif;
+  padding: 10px;
+  margin: 0;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 4px;
+  font-size: 33px;
+  color: rgb(235, 185, 20);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.active {
+  display: initial;
+  animation: opacity 0.3s;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(235, 185, 20);
+  font-family: "MedievalSharp", cursive;
+}
+
+.text-container h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.text-container h2 {
+  font-size: 33px;
+  margin-top: 0;
+}
+.text-container h3 {
+  margin-top: 45px;
+}
+
+.text-container :is(h1, h2, h3) {
+  text-shadow: 2px 2px 2px rgb(47, 37, 3);
+}
+
+#start-button {
+  width: 100px;
+  height: 40px;
+  margin-bottom: 100px;
+  background: rgb(77, 56, 0);
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 2px rgb(235, 185, 20);
+  font-weight: bold;
+  transition: transform 0.1s color 0.1s;
+}
+
+#start-button:hover {
+  transform: translate(1px, 1px);
+  box-shadow: none;
+  color: rgb(244, 198, 49);
+  background: rgb(108, 80, 1);
+}
+
+#canvas {
+  /* background: linear-gradient(90deg,red 0%, white 50%); */
+  background-color: white;
+}
